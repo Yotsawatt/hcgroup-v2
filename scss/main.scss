@@ -238,7 +238,7 @@ header {
 // certificate section-5
 .section-5{
     background-color: var(--orange);
-    padding: 40px 0;
+    padding: 40px 0 100px;
     .cer-header{
         text-align: center;
         padding: 20px 0;
@@ -318,8 +318,51 @@ header {
 }
 // foorter
 footer{
-    background-color: var(--white);
-    height: 200px;
+    background-image: url("https://images.unsplash.com/photo-1575330719343-23de81f5b995?ixlib=rb-1.2.1&auto=format&fit=crop&w=1067&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.footer{
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 250px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "footer-left footer-center";
+    padding: 40px 0;
+
+    .footer-left{
+        grid-area: footer-left;
+        align-self: end;
+        
+        h1{
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+    .footer-center{
+        grid-area: footer-center;
+        text-align: center;
+        align-self: end;
+        li{
+            list-style-type: none;
+            padding: 3px 0;
+            a{
+                text-transform: uppercase;
+                font-size: 18px;
+                color: var(--black);
+                text-decoration: none;
+                transition: 0.3s;
+            }
+            a:hover{
+                color: var(--orange);
+            }
+        }
+    }
+
 }
 
 // public class //--------------------------------------------------------------
@@ -378,3 +421,42 @@ footer{
     .card-container:hover{
         transform: translate(-10px ,-10px);
     }
+
+
+
+// responsive layout //--------------------------------------------
+
+@media only screen and (max-width: 768px) {
+
+    header{
+        display: flex;
+
+        .logo{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+
+            
+        }
+        .container-head{
+            
+            display: flex;
+            flex-direction: column;
+
+            ul.navbar{
+                display: flex;
+                flex-direction: column;
+                display: none;
+                li{
+                    padding:5px;
+                }
+            }
+            ul.navbar.active{
+                display: flex;
+            }
+        }
+
+    }
+
+}
