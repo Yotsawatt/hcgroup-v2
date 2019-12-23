@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HC Group Thailands</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/global.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -149,7 +150,7 @@
         <div class="container">
             <div class="cer-header">
                 <p>Certificate</p>
-                <h1>The best <span class="black">food and factory standatd</span></h1>
+                <h1>The best <span class="black">food and factory standard</span></h1>
             </div>
            <div class="cer-container">
                 <div class="cer-item">

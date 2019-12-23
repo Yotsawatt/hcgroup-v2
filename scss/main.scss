@@ -37,13 +37,15 @@ header {
         justify-content: space-between;
 
         .logo{
-            background-color: var(--orange);
-            border-radius: 3px;
+            
             h1{
+                background-color: var(--orange);
+                border-radius: 3px;
                 text-transform: uppercase;
                 color: var(--white);
                 padding: 5px;
             }
+
         }
 
         ul.navbar{
@@ -365,63 +367,10 @@ footer{
 
 }
 
-// public class //--------------------------------------------------------------
-// public class //
-    // button
-    .btn {
-        border: none;
-        padding: 15px 20px;
-        text-align: center;
-        text-decoration: none;
-        background-color: var(--orange);
-        color: var(--white);
-        font-size: 18px;
-        opacity: 1;
-        transition: 0.3s;
-        cursor: pointer;
-    }
-    .btn-reverse{
-        background-color: var(--white);
-        color: var(--orange);
-        border: 1px solid var(--orange);
-    }
-    .btn-small{
-        padding: 8px 15px;
-        font-size: 14px;
-    }
-    .btn:hover{
-        opacity: 0.7;
-    }
-
-    // card-item
-    .card-container{
-        width: 100%;
-        // background-color: #ff7e14;
-        // border: 1px solid #ff7e14;
-        transition: 0.3s;
-        box-shadow: 10px 10px 10px rgba(128, 128, 128,0.5);
-        .card-img{
-            img{
-                cursor: pointer;
-                width: 100%;
-            }
-        }
-        .card-box-content{
-            padding: 25px 20px;
-            h1{
-                font-size: 20px;
-                padding-bottom: 10px;
-            }
-            p{
-                color: var(--gray);
-                padding-bottom: 10px;
-            }
-        }
-    }
-    .card-container:hover{
-        transform: translate(-10px ,-10px);
-    }
-
+//menu responsive
+.menu-respon{
+    display: none;
+}
 
 
 // responsive layout //--------------------------------------------
@@ -430,13 +379,11 @@ footer{
 
     header{
         display: flex;
-
+        padding: 10px 10px;
         .logo{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 20px;
-
             
         }
         .container-head{
@@ -458,5 +405,74 @@ footer{
         }
 
     }
+    .menu-respon{
+        display: flex;
+    }
+
+    .section-1{
+        grid-template-columns: 1fr;
+        grid-template-areas: "left-side"
+                             "right-side";
+        .present-leftside{
+            grid-area: right-side;
+            padding: 5px;
+        }
+        .present-rightside{
+            grid-area: left-side;
+            padding: 5px;
+        }
+    }
+    .section-2{
+        grid-template-columns: 1fr;
+        grid-template-areas: "left-side"
+                             "right-side";
+        .aboutus-leftside{
+            grid-area: left-side;
+            padding: 5px;
+        }       
+        .aboutus-rightside{
+            grid-area: right-side;
+            padding: 5px;
+        }
+    }
+    .section-3{
+        grid-template-columns: 1fr;
+
+        .card-container{
+            padding: 15px;
+        }
+    }
+    .section-4{
+        .product-container{
+            grid-template-columns: 1fr;
+            padding: 10px;
+        }
+    }
+    .section-5{
+        .cer-container{
+            grid-template-columns: 1fr;
+            padding: 10px;
+        }
+    }
+    .section-6{
+        grid-template-columns: 1fr;
+    }
+    footer{
+        padding: 10px;
+        .footer{
+            grid-template-columns: 1fr;
+            grid-template-areas: "top-side"
+                                 "bottom-side";
+            .footer-left{
+                grid-area: top-side;
+            }
+            .footer-center{
+                grid-area: bottom-side;
+                // text-align: start;
+                display: none;
+            }
+        }
+    }
+
 
 }

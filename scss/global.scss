@@ -1,0 +1,61 @@
+// public class //--------------------------------------------------------------
+// public class //
+:root{
+    --btn:#03a9f4;
+    --btn-bg:#ffffff;
+}
+    // button
+    .btn {
+        border: none;
+        padding: 15px 20px;
+        text-align: center;
+        text-decoration: none;
+        background-color: var(--btn);
+        color: var(--btn-bg);
+        font-size: 18px;
+        opacity: 1;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    .btn-reverse{
+        background-color: var(--btn-bg);
+        color: var(--btn);
+        border: 1px solid var(--btn);
+    }
+    .btn-small{
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    .btn:hover{
+        opacity: 0.7;
+    }
+
+    // card-item
+    .card-container{
+        width: 100%;
+        // background-color: #ff7e14;
+        // border: 1px solid #ff7e14;
+        transition: 0.3s;
+        box-shadow: 10px 10px 10px rgba(128, 128, 128,0.5);
+        .card-img{
+            img{
+                cursor: pointer;
+                width: 100%;
+            }
+        }
+        .card-box-content{
+            padding: 25px 20px;
+            h1{
+                font-size: 20px;
+                padding-bottom: 10px;
+            }
+            p{
+                color: var(--gray);
+                padding-bottom: 10px;
+            }
+        }
+    }
+    .card-container:hover{
+        transform: translate(-10px ,-10px);
+    }
+    

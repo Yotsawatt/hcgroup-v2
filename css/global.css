@@ -1,0 +1,66 @@
+:root {
+  --btn:#03a9f4;
+  --btn-bg:#ffffff;
+}
+
+.btn {
+  border: none;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--btn);
+  color: var(--btn-bg);
+  font-size: 18px;
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn-reverse {
+  background-color: var(--btn-bg);
+  color: var(--btn);
+  border: 1px solid var(--btn);
+}
+
+.btn-small {
+  padding: 8px 15px;
+  font-size: 14px;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+.card-container {
+  width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.5);
+          box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.5);
+}
+
+.card-container .card-img img {
+  cursor: pointer;
+  width: 100%;
+}
+
+.card-container .card-box-content {
+  padding: 25px 20px;
+}
+
+.card-container .card-box-content h1 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.card-container .card-box-content p {
+  color: var(--gray);
+  padding-bottom: 10px;
+}
+
+.card-container:hover {
+  -webkit-transform: translate(-10px, -10px);
+          transform: translate(-10px, -10px);
+}
+/*# sourceMappingURL=global.css.map */
