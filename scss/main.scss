@@ -21,57 +21,6 @@ body{
     margin: 0 auto;
 }
 
-//navbar header
-header {
-
-    background-color: var(--white);
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0;
-    .container-head{
-
-        display: flex;
-        max-width: 1200px;
-        margin: 0 auto;
-        width: 100%;
-        justify-content: space-between;
-
-        .logo{
-            
-            h1{
-                background-color: var(--orange);
-                border-radius: 3px;
-                text-transform: uppercase;
-                color: var(--white);
-                padding: 5px;
-            }
-
-        }
-
-        ul.navbar{
-            display: flex;
-            align-items: center;
-    
-            li{
-                list-style: none;
-                
-                a{
-                    padding: 0 10px;
-                    font-size: 15px;
-                    text-transform: uppercase;
-                    text-decoration: none;
-                    transition: 0.5s;
-                    color: var(--black);
-                }
-                a:hover{
-                    color: var(--orange);
-                }
-            }
-        }
-    }
-    
-
-}
 
 //slide section
 
@@ -367,47 +316,14 @@ footer{
 
 }
 
-//menu responsive
-.menu-respon{
-    display: none;
-}
+
 
 
 // responsive layout //--------------------------------------------
 
 @media only screen and (max-width: 768px) {
 
-    header{
-        display: flex;
-        padding: 10px 10px;
-        .logo{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            
-        }
-        .container-head{
-            
-            display: flex;
-            flex-direction: column;
-
-            ul.navbar{
-                display: flex;
-                flex-direction: column;
-                display: none;
-                li{
-                    padding:5px;
-                }
-            }
-            ul.navbar.active{
-                display: flex;
-            }
-        }
-
-    }
-    .menu-respon{
-        display: flex;
-    }
+    
 
     .section-1{
         grid-template-columns: 1fr;

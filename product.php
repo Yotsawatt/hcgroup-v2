@@ -12,5 +12,12 @@
 <body>
     <?php include('layout/navbar.php') ?>
 
+    <div class="container">
+        <div class="header-text">
+            <p>our products</p>
+            <h1>all product of hcgroupthailand</h1>
+        </div>
+    </div>
+
 </body>
 </html>
