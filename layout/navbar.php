@@ -7,7 +7,7 @@
         </div>
         <ul id="ulnavbar" class="navbar">
             <li><a href="index">homepage</a></li>
-            <li><a href="product">product</a></li>
+            <li><a href="products">product</a></li>
             <li><a href="">about us</a></li>
             <li><a href="">Find a store</a></li>
             <li><a href="">shop online</a></li>

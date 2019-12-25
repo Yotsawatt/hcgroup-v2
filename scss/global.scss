@@ -1,9 +1,25 @@
 // public class //--------------------------------------------------------------
 // public class //
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 :root{
     --btn:#03a9f4;
     --btn-bg:#ffffff;
+    --black:#000000;
+    --gray:#808080;
 }
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
     // button
     .btn {
         border: none;
@@ -62,7 +78,7 @@
 //navbar header
 header {
 
-    background-color: var(--white);
+    background-color: var(--btn-bg);
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
@@ -77,10 +93,10 @@ header {
         .logo{
             
             h1{
-                background-color: var(--orange);
+                background-color: var(--btn);
                 border-radius: 3px;
                 text-transform: uppercase;
-                color: var(--white);
+                color: var(--btn-bg);
                 padding: 5px;
             }
 
@@ -102,7 +118,7 @@ header {
                     color: var(--black);
                 }
                 a:hover{
-                    color: var(--orange);
+                    color: var(--btn);
                 }
             }
         }
@@ -113,6 +129,54 @@ header {
     display: none;
 }
 
+// foorter
+footer{
+    background-image: url("https://images.unsplash.com/photo-1575330719343-23de81f5b995?ixlib=rb-1.2.1&auto=format&fit=crop&w=1067&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.footer{
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 250px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "footer-left footer-center";
+    padding: 40px 0;
+
+    .footer-left{
+        grid-area: footer-left;
+        align-self: end;
+        
+        h1{
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+    .footer-center{
+        grid-area: footer-center;
+        text-align: center;
+        align-self: end;
+        li{
+            list-style-type: none;
+            padding: 3px 0;
+            a{
+                text-transform: uppercase;
+                font-size: 18px;
+                color: var(--black);
+                text-decoration: none;
+                transition: 0.3s;
+            }
+            a:hover{
+                color: var(--orange);
+            }
+        }
+    }
+
+}
 
 @media only screen and (max-width: 768px) {
     
@@ -147,4 +211,22 @@ header {
     .menu-respon{
         display: flex;
     }
+    
+    footer{
+        padding: 10px;
+        .footer{
+            grid-template-columns: 1fr;
+            grid-template-areas: "top-side"
+                                 "bottom-side";
+            .footer-left{
+                grid-area: top-side;
+            }
+            .footer-center{
+                grid-area: bottom-side;
+                // text-align: start;
+                display: none;
+            }
+        }
+    }
+
 }
