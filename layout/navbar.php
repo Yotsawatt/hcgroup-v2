@@ -8,10 +8,10 @@
         <ul id="ulnavbar" class="navbar">
             <li><a href="index">homepage</a></li>
             <li><a href="products">product</a></li>
-            <li><a href="">about us</a></li>
-            <li><a href="">Find a store</a></li>
-            <li><a href="">shop online</a></li>
-            <li><a href="">contact us</a></li>
+            <li><a href="aboutus">about us</a></li>
+            <li><a href="findastore">Find a store</a></li>
+            <li><a href="https://www.google.co.th" target="_blank">shop online</a></li>
+            <li><a href="contactus">contact us</a></li>
         </ul>  
     </div>
     

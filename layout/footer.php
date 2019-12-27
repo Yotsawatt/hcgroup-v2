@@ -12,7 +12,8 @@
                 <p>Copyright © 2019 Hcgroup-thailand. All right Reserved Template by Hcgroupteam</p>
             </div>
             <div class="footer-center">
-                <li><a href="">product</a></li>
+                <li><a href="index">homepage</a></li>
+                <li><a href="products">product</a></li>
                 <li><a href="">about us</a></li>
                 <li><a href="">find a store</a></li>
                 <li><a href="">shop online</a></li>

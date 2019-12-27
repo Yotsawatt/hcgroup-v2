@@ -83,11 +83,20 @@ body {
 
 .text-content img {
   width: 100%;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .text-content p {
   font-size: 20px;
   color: #808080;
   padding: 10px 0 30px;
+}
+
+.text-content img:hover {
+  -webkit-filter: blur(0);
+          filter: blur(0);
 }
 /*# sourceMappingURL=product.css.map */

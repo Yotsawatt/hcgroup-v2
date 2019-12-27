@@ -5,10 +5,6 @@
   --black:#000000;
 }
 
-body {
-  font-family: 'Open Sans', sans-serif;
-}
-
 .section-1 {
   display: -ms-grid;
   display: grid;
