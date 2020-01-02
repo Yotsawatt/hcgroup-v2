@@ -65,7 +65,7 @@ body{
 .text-content{
     img{
         width: 100%;
-        filter: blur(3px);
+        // filter: blur(3px);
         transition: 0.3s;
     }
     p{
@@ -74,7 +74,7 @@ body{
         padding: 10px 0 30px;
     }
     img:hover{
-        filter: blur(0);
+        // filter: blur(0);
     }
     
 }
