@@ -64,8 +64,33 @@
             <h1>Certificate</h1>
         </div>
         <div class="section-4">
-
+            <div class="text-cer">
+                <p>Over 20 years of our experience and expertise in preserved ginger production and constant development of personnel and technology has brought us to meet the standards of GMP, HACCP, ISO9001, ISO17025, Halal, TSL8001 and BRC. Our achievement of internationally qualified standards and safety leads us to our next goal of qualifying for ISO14001 certifications.</p>
+            </div>
+            <div class="cer-container">
+                <div class="cer-card">
+                    <img src="https://images.unsplash.com/photo-1577835173289-c7a39c86ce9f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="">
+                    <p>Certificate</p>
+                    <h1>HACCP</h1>
+                </div>
+                <div class="cer-card">
+                    <img src="https://images.unsplash.com/photo-1577835173289-c7a39c86ce9f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="">
+                    <p>Certificate</p>
+                    <h1>ISO 9001</h1>
+                </div>
+                <div class="cer-card">
+                    <img src="https://images.unsplash.com/photo-1577835173289-c7a39c86ce9f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="">
+                    <p>Certificate</p>
+                    <h1>BRC</h1>
+                </div>
+                <div class="cer-card">
+                    <img src="https://images.unsplash.com/photo-1577835173289-c7a39c86ce9f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="">
+                    <p>Certificate</p>
+                    <h1>HALAL</h1>
+                </div>
+            </div>
         </div>
     </div>
+    <?php include('layout/footer.php') ?>
 </body>
 </html>
