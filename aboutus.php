@@ -9,7 +9,7 @@
     <div class="container">
         <div class="header-text">
             <p>About us</p>
-            <h1>Get to know us</h1>
+            <h1>Get to <span class="text-color">know</span> us</h1>
         </div>
         <!-- about us paragraph -->
         <div class="section-1">
@@ -17,41 +17,47 @@
             <p>Establishment of CHIANGRAI AGRO-INDUSRTY Co.,Ltd. in 2009 to produce and sell ready-to-eat products. The project was supported by Thailand Board of Investment (BOI).</p>
             <p>Nowadays, our products are available to worldwide market with the aim to meet our consumer's satisfaction and safety. All this done under our policy : Impression, Safety and Quality</p>
         </div>
+    </div>
 
+    
         <!-- key for success -->
         <div class="header-text">
             <p>About us</p>
-            <h1>Key for success</h1>
+            <h1><span class="text-color">Key</span> for success</h1>
         </div>
         <div class="section-2">
-            <div class="key-for-container">
-                <div class="left-key">
-                    <img src="https://images.unsplash.com/photo-1571942794234-fecca8604664?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80" alt="">
+            <div class="container">
+                <div class="key-for-container">
+                    <div class="left-key">
+                        <img src="https://images.unsplash.com/photo-1571942794234-fecca8604664?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80" alt="">
+                    </div>
+                    <div class="right-key">
+                        <h1>Quality</h1>
+                        <p>All raw material are grown in Northern Thailand and controlled under GAP ( Good Agricultural practice ) with our closely suppliers.</p>
+                    </div>
                 </div>
-                <div class="right-key">
-                    <h1>Quality</h1>
-                    <p>All raw material are grown in Northern Thailand and controlled under GAP ( Good Agricultural practice ) with our closely suppliers.</p>
+                <div class="key-for-container">
+                    <div class="left-key">
+                        <img src="https://images.unsplash.com/photo-1577893312286-303365faa18e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="">
+                    </div>
+                    <div class="right-key">
+                        <h1>Safety</h1>
+                        <p>We concern in food safety as well as development of personnel and technology, guaranteed by the standard of GMP , HACCP , ISO9001:2015 , BRC and HALAL.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="key-for-container">
-                <div class="left-key">
-                    <img src="https://images.unsplash.com/photo-1571942794234-fecca8604664?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80" alt="">
+                <div class="key-for-container">
+                    <div class="left-key">
+                        <img src="https://images.unsplash.com/photo-1578010915139-507e4b5289a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80" alt="">
+                    </div>
+                    <div class="right-key">
+                        <h1>Specialized</h1>
+                        <p>With our experience and expertise in perserved ginger over 25 years, all products are taken by highly professional team in every step, from raw material until the finished products leave the factory.</p>
+                    </div>
                 </div>
-                <div class="right-key">
-                    <h1>Quality</h1>
-                    <p>All raw material are grown in Northern Thailand and controlled under GAP ( Good Agricultural practice ) with our closely suppliers.</p>
-                </div>
-            </div>
-            <div class="key-for-container">
-                <div class="left-key">
-                    <img src="https://images.unsplash.com/photo-1571942794234-fecca8604664?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80" alt="">
-                </div>
-                <div class="right-key">
-                    <h1>Quality</h1>
-                    <p>All raw material are grown in Northern Thailand and controlled under GAP ( Good Agricultural practice ) with our closely suppliers.</p>
-                </div>
-            </div>
+            </div> <!-- end container -->
         </div>
+
+        <div class="container">
         <!-- video section -->
         <div class="section-3">
             <div class="video-container">
@@ -89,6 +95,14 @@
                     <h1>HALAL</h1>
                 </div>
             </div>
+        </div>
+    </div>
+    <!-- more download -->
+    <div class="section-5">
+        <div class="download-container">
+            <p>about us</p>
+            <h1><span class="text-color">More</span> Information</h1>
+            <a href="#" target="_blank">Download document.pdf</a>
         </div>
     </div>
     <?php include('layout/footer.php') ?>

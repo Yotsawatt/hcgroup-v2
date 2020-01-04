@@ -213,6 +213,10 @@ footer {
   background-color: var(--btn);
 }
 
+.text-color {
+  color: var(--btn);
+}
+
 @media only screen and (max-width: 768px) {
   header {
     display: -webkit-box;

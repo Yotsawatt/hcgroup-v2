@@ -11,7 +11,7 @@
         <!-- main product -->
         <div class="header-text">
             <p>Our Products</p>
-            <h1>all product of hcgroupthailand</h1>
+            <h1>all product of <span class="text-color">hcgroupthailand</span></h1>
         </div>
         <div class="product-container">
             <div class="product-item">
@@ -34,7 +34,7 @@
         <!-- OEM product -->
         <div class="header-text">
             <p>More Products</p>
-            <h1>OEM Product</h1>
+            <h1><span class="text-color">OEM</span> Product</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus deserunt veritatis ratione labore tempore. Id, atque deleniti eum, esse illum nostrum accusamus soluta excepturi commodi tempore iste ex debitis alias.</p>
         </div>
         <div class="product-container">
@@ -58,7 +58,7 @@
         <!-- partner product -->
         <div class="header-text">
             <p>More Products</p>
-            <h1>More partner Products</h1>
+            <h1>More <span class="text-color">Partner</span> Products</h1>
         </div>
         <div class="partner-container">
             <div class="left-partner">

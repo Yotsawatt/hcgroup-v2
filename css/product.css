@@ -60,6 +60,7 @@ body {
       grid-template-columns: 1fr 1fr;
       grid-template-areas: "left-header right-header";
   width: 100%;
+  padding: 20px 0;
 }
 
 .partner-container .left-partner {

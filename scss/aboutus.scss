@@ -1,3 +1,10 @@
+:root{
+    --maincolor:#f8f8f8;
+    --orange: #03a9f4;
+    --white: #ffffff;
+    --gray:#808080;
+    --black:#000000;
+}
 .header-text{
     text-align: center;
     padding: 20px 0;
@@ -23,6 +30,7 @@
 .section-2{
 
     display: grid;
+    background-color: rgba($color: #03a9f4, $alpha: 0.2);
 
     .key-for-container{
         display: grid;
@@ -33,6 +41,7 @@
             grid-area: left-key;
             img{
                 width: 100%;
+                box-shadow: 10px 10px 10px rgba($color: #808080, $alpha: 0.5);
             }
         }
         .right-key{
@@ -73,6 +82,7 @@
 
 // certificate section
 .section-4{
+    padding-bottom: 50px;
     .text-cer{
         text-align: left;
         padding: 20px 0;
@@ -89,8 +99,55 @@
     }
     .cer-card{
         padding: 10px;
+        background-color: var(--maincolor);
+        text-align: center;
+        box-shadow: 10px 10px 10px rgba($color: #808080, $alpha: 0.5);
+        cursor: pointer;
         img{
             width: 100%;
+        }
+        p{
+            padding: 15px;
+        }
+        h1{
+            font-size: 30px;
+
+        }
+    }
+}
+
+// section 5 download section
+
+.section-5{
+    background-image: url("https://images.unsplash.com/photo-1567677280411-22bedc78cb87?ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+
+    .download-container{
+        text-align: center;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding: 50px 0;
+        background-color: rgba($color: #ffffff, $alpha: 0.7);
+
+        p{
+            font-size: 20px;
+        }
+        h1{
+            text-transform: uppercase;
+            font-size: 40px;
+            padding: 15px;
+        }
+        a{
+            text-decoration: none;
+            font-size: 30px;
+            color: rgba($color: #ffffff, $alpha: 1.0);
+            background-color: #ff9a3b;
+            padding: 5px;
+            border-radius: 5px;
         }
     }
 }
