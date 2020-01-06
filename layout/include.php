@@ -4,3 +4,4 @@
     <title>HC Group Thailands</title>
     <link rel="stylesheet" href="css/global.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="js/main.js"></script>

@@ -109,7 +109,6 @@ header {
         ul.navbar{
             display: flex;
             align-items: center;
-    
             li{
                 list-style: none;
                 
@@ -189,6 +188,19 @@ footer{
     color: var(--btn);
 }
 
+// input form
+.input-form{
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-size: 16px;
+}
+
 @media only screen and (max-width: 768px) {
     
     header{
@@ -209,8 +221,9 @@ footer{
                 display: flex;
                 flex-direction: column;
                 display: none;
+                background-color: #ccc;
                 li{
-                    padding:5px;
+                    padding:10px;
                 }
             }
             ul.navbar.active{

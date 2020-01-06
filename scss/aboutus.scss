@@ -45,6 +45,7 @@
             }
         }
         .right-key{
+            grid-area: right-key;
             padding-left: 30px;
             h1{
                 font-size: 30px;
@@ -149,5 +150,44 @@
             padding: 5px;
             border-radius: 5px;
         }
+    }
+}
+
+// responsive layout
+
+@media only screen and (max-width:768px) {
+    .section-1{
+        p{
+            padding: 15px;
+        }
+    }
+    .section-2{
+        display: grid;
+        .key-for-container{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas: "left-key"
+                                 "right-key";
+            .left-key{
+                grid-area: left-key;
+            }
+            .right-key{
+                grid-area: right-key;
+            }
+        }
+    }
+
+    .section-4{
+        .cer-container{
+            grid-template-columns: 1fr;
+        }
+    }
+    .text-cer{
+        p{
+            padding: 15px;
+        }
+    }
+    .download-container{
+        padding: 15px;
     }
 }

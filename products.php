@@ -11,7 +11,7 @@
         <!-- main product -->
         <div class="header-text">
             <p>Our Products</p>
-            <h1>all product of <span class="text-color">hcgroupthailand</span></h1>
+            <h1>all product of <span class="text-color">hcgroup thailand</span></h1>
         </div>
         <div class="product-container">
             <div class="product-item">

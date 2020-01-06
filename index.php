@@ -177,6 +177,5 @@
     </div>
     <?php include('layout/footer.php') ?>
     
-<script src="js/main.js"></script>
 </body>
 </html>

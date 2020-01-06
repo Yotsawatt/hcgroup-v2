@@ -93,4 +93,29 @@ body {
   color: #808080;
   padding: 10px 0 30px;
 }
+
+@media only screen and (max-width: 768px) {
+  .header-text {
+    padding: 15px;
+  }
+  .product-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .partner-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "left-header" "right-header";
+  }
+  .partner-container .left-partner {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: left-header;
+  }
+  .partner-container .right-partner {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: right-header;
+  }
+}
 /*# sourceMappingURL=product.css.map */
