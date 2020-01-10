@@ -127,6 +127,30 @@ body{
     background-color: var(--maincolor);
     color: var(--white);
     text-decoration: none;
+    
+}
+.btn-submit{
+    font-family: 'Ropa Sans', sans-serif;
+    padding: 8px 12px;
+    background-color: var(--maincolor);
+    color: var(--white);
+    text-decoration: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+// form-control
+form{
+    font-size: 18px;
+}
+.form-input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 // color class for background
