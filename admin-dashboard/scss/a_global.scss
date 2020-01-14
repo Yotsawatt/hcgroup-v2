@@ -153,6 +153,23 @@ form{
     box-sizing: border-box;
 }
 
+// login controller
+.login-container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .login-form{
+
+        width: 500px;
+        height: 500px;
+        text-align: center;
+        padding: 30px;
+        background-color: #9e9e9e;
+    }
+
+}
 // color class for background
 
 .blue{

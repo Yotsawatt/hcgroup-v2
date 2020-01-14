@@ -1,7 +1,4 @@
-<?php 
-    session_start();
-    require_once("controller/mainpage_con.php");
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
