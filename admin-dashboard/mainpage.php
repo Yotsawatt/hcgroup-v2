@@ -1,4 +1,14 @@
+<?php 
 
+    require_once('controller/connect.php');
+    // paragraph section
+    $showparagraph = "SELECT * FROM paragraph WHERE page_paragraph='home' ";
+    $queryparagraph = $connect->query($showparagraph);
+    // picture section
+    $showpic = "SELECT * FROM picture WHERE page_pic='home' ";
+    $querypic = $connect->query($showpic);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,30 +24,38 @@
         <div class="paragraph-section">
             <div class="header-section">
                 <h1>paragraph section</h1>
-                <a href="add-paragraph" class="btn green">Add paragraph</a>
+                <a href="add-paragraph?form_page=mainpage" class="btn green">Add paragraph</a>
             </div>
             <table class="table">
                 <tr>
                     <th width="5%">#</th>
                     <th>section</th>
                     <th>paragraph</th>
+                    <th>comment</th>
                     <th width="5%">edit</th>
                     <th width="5%">delete</th>
                 </tr>
-                <tr>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus corrupti magnam in atque distinctio culpa commodi porro numquam labore dolores rem veniam, velit explicabo doloribus magni reiciendis repudiandae exercitationem nobis.</td>
-                    <td><a href="" class="btn orange">edit</a></td>
-                    <td><a href="" class="btn red">delete</a></td>
-                </tr>
+                <?php 
+                    $count = 1;
+                    while($row = $queryparagraph->fetch_assoc()){
+                        echo "<tr>";
+                        echo "<td>".$count++."</td>";
+                        echo "<td>".$row['section']."</td>";
+                        echo "<td>".$row['text_paragraph']."</td>";
+                        echo "<td>".$row['comment']."</td>";
+                        echo "<td><a href='edit-paragraph?id=".$row['id']."&form_page=mainpage ' class='btn orange'>edit</a></td>";
+                        echo "<td><a href='controller/add-paragraph_con?iddel=".$row['id']."&delmode=1' class='btn red'>delete</a></td>";
+                        echo "</tr>";
+                    }
+                
+                ?>
             </table>
         </div>
         <!-- picture section -->
         <div class="picture-section">
             <div class="header-section">
                 <h1>picture section</h1>
-                <a href="add-pic" class="btn green">Add picture</a>
+                <a href="add-pic?form_page=mainpage" class="btn green">Add picture</a>
             </div>
             <table class="table">
                 <tr>
@@ -45,25 +63,25 @@
                     <th>section</th>
                     <th width="30%">picture</th>
                     <th>detail / comment</th>
+                    <th>category</th>
                     <th width="5%">edit</th>
                     <th width="5%">delete</th>
                 </tr>
-                <tr>
-                    <td>1</td>
-                    <td>1</td>
-                    <td><img src="https://images.unsplash.com/photo-1578509725196-53444c549731?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1055&q=80" alt=""></td>
-                    <td>picture section 1</td>
-                    <td><a href="" class="btn orange">edit</a></td>
-                    <td><a href="" class="btn red">delete</a></td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>1</td>
-                    <td><img src="https://images.unsplash.com/photo-1578509725196-53444c549731?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1055&q=80" alt=""></td>
-                    <td>picture section 1</td>
-                    <td><a href="" class="btn orange">edit</a></td>
-                    <td><a href="" class="btn red">delete</a></td>
-                </tr>
+                <?php 
+                    $count = 1;
+                    while($rowpic = $querypic->fetch_assoc()){
+                        echo "<tr>";
+                        echo "<td>".$count++."</td>";
+                        echo "<td>".$rowpic['section']."</td>";
+                        echo "<td><img src='../images/".$rowpic['path_pic']."'></td>";
+                        echo "<td>".$rowpic['comment']."</td>";
+                        echo "<td>".$rowpic['category']."</td>";
+                        echo "<td><a href='edit-pic?id=".$row['id']." ' class='btn orange'>edit</a></td>";
+                        echo "<td><a href='controller/add-pic_con?iddel=".$rowpic['id']."&delmode=1&path_pic=".$rowpic['path_pic']."&form_page=mainpage ' class='btn red'>delete</a></td>";
+                        echo "</tr>";
+                    }
+                
+                ?>
             </table>
         </div>
     </div>

@@ -4,3 +4,4 @@
     <title>Admin-dashboard</title>
     <link rel="stylesheet" href="css/a_global.css">
     <link href="https://fonts.googleapis.com/css?family=Ropa+Sans&display=swap" rel="stylesheet">
+    <script src="js/script.js"></script>

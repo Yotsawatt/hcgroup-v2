@@ -135,6 +135,7 @@ body {
   background-color: var(--maincolor);
   color: var(--white);
   text-decoration: none;
+  cursor: pointer;
 }
 
 .btn-submit {
