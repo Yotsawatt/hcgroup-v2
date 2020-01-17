@@ -4,6 +4,7 @@
 
     $insertmode = $_POST['insertmode'];
     $delmode = $_GET["delmode"];
+    $editmode = $_POST["editmode"];
     $path = basename($_FILES["path"]["name"]);
     
 
@@ -52,12 +53,26 @@
         
     }
     // update file picture
+    if($editmode == 1){
+        $page = $_POST["page"];
+        $section = $_POST["section"];
+        $category = $_POST["category"];
+        $comment = $_POST["comment"];
+        $idedit = $_POST["idedit"];
+        $form_page = $_POST["form_page"];
+        $update = "UPDATE picture SET page_pic='$page',section='$section',category='$category',comment='$comment' WHERE id = '$idedit' ";
+        if($connect->query($update) === TRUE){
+
+            header("location: ../".$form_page);
+
+        }
+    }
     // delete file picture
     if($delmode == 1) {
         $iddel = $_GET["iddel"];
         $path_pic = $_GET["path_pic"];
         $form_page = $_GET["form_page"];
-        echo $iddel;
+        // echo $iddel;
         $delete = "DELETE FROM picture WHERE id = '$iddel' ";
         if($connect->query($delete) === TRUE) {
             $deletepic = unlink("../../images/".$path_pic);
