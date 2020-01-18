@@ -95,13 +95,9 @@ header {
         justify-content: space-between;
 
         .logo{
-            
-            h1{
-                background-color: var(--btn);
-                border-radius: 3px;
-                text-transform: uppercase;
-                color: var(--btn-bg);
-                padding: 5px;
+            display: flex;
+            img{
+                width: 200px;
             }
 
         }
@@ -210,6 +206,7 @@ footer{
             display: flex;
             justify-content: space-between;
             align-items: center;
+            
             
         }
         .container-head{

@@ -106,12 +106,14 @@ header .container-head {
           justify-content: space-between;
 }
 
-header .container-head .logo h1 {
-  background-color: var(--btn);
-  border-radius: 3px;
-  text-transform: uppercase;
-  color: var(--btn-bg);
-  padding: 5px;
+header .container-head .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .container-head .logo img {
+  width: 200px;
 }
 
 header .container-head ul.navbar {

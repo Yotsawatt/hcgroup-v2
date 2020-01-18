@@ -2,7 +2,7 @@
 <header>
     <div class="container-head">
         <div class="logo">
-            <h1 class="header-logo" >Hc Group</h1>
+            <img src="./images/Logo_Hc-Group-resize.png" alt="">
             <h2 class="menu-respon" onclick="Clicktoggle()">Menu</h2>
         </div>
         <ul id="ulnavbar" class="navbar">
