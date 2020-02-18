@@ -13,7 +13,7 @@
             </div>
             <div class="footer-center">
                 <li><a href="index">homepage</a></li>
-                <li><a href="products">product</a></li>
+                <li><a href="product">product</a></li>
                 <li><a href="aboutus">about us</a></li>
                 <li><a href="findastore">find a store</a></li>
                 <li><a href="">shop online</a></li>
